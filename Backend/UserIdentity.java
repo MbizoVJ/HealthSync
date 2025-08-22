@@ -22,8 +22,7 @@ public class UserIdentity {
 
         public Builder setPassword(String password) {
             this.password = password;
-            return this
-            ;
+            return this;
         }
 
         public Builder setProfilePicture(byte[] profilePicture) {
@@ -93,5 +92,6 @@ public class UserIdentity {
                 ", profilePicture=" + Arrays.toString(profilePicture) +
                 '}';
     }
-    
 }
+
+
