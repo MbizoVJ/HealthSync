@@ -5,11 +5,6 @@ import java.util.List;
 
 public class UserIdentityRepository implements  IUserIdentityRepository{
      public static UserIdentityRepository repository = null;
-    public List<UserIdentity> userIdentityList;
-
-public UserIdentityRepository(){
-    userIdentityList = new ArrayList<>();
-}
     public static UserIdentityRepository createRepo()
     {
         if(repository == null){
@@ -18,7 +13,11 @@ public UserIdentityRepository(){
      }
              return repository;
     }
-    @Override
+
+public List<UserIdentity> userIdentityList;
+    public UserIdentityRepository(){
+        userIdentityList = new ArrayList<>();
+    }Override
     public List<UserIdentity> getAll(){
         return userIdentityList;
     }
