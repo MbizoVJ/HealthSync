@@ -10,7 +10,7 @@ public class UserIdentityService implements IUserIdentityService{
             ServiceRepo = new UserIdentityService();
         }
 
-        return ServiceRepo;
+        return ServiceRepo ;
     }
 
     IUserIdentityRepository repository;

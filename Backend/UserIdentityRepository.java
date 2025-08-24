@@ -17,7 +17,7 @@ public class UserIdentityRepository implements  IUserIdentityRepository{
 public List<UserIdentity> userIdentityList;
     public UserIdentityRepository(){
         userIdentityList = new ArrayList<>();
-    }Override
+    }@Override
     public List<UserIdentity> getAll(){
         return userIdentityList;
     }

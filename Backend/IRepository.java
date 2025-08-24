@@ -1,6 +1,6 @@
 package Backend;
 
-public interface IRepository  <Type , id>{
+public interface IRepository  <Type , id> {
     
         Type create (Type t);
 
